@@ -38,6 +38,7 @@ footer  {
     left: 0;
     right: 0;
     width: 100%;
+    border: solid 3px darkcyan;
     text-align: center;
 }
 a {

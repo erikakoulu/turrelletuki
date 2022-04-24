@@ -33,6 +33,13 @@ img {
 .nav-link {
     color: black;
 }
+footer  {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
 a {
     color: black;
 }

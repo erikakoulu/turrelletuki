@@ -34,7 +34,7 @@ img {
     color: black;
 }
 footer  {
-    border: solid 3px darkcyan;
+    border-top: solid 3px darkcyan;
     position: absolute;
     left: 0;
     right: 0;

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kodinetsijät</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="main_styles.css">
+<style>
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+}
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+}
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+    </style>
+    </head>
+    <body>
+    <nav>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+        <img src="images/header_dog.png" style="border:none" alt="Koiralogo" width="130" height="130">
+        Rescueyhdistys Turrelle tuki
+      </a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="rescue.html">Rescue-toiminta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adoptio.html">Adoptio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" style="text-decoration:underline" href="kodinetsijat.html">Kodinetsijät</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-6 bg-white">
+            <h1>Kodinetsijät</h1>
+            <h2>Ursula</h2>
+            <p>Ursula on kolmevuotias mäyräkoira-kääpiöpinseri-mix. Ursula löydettiin Kroatiasta Splitin valtatien varresta pienestä pahvilaatikosta seuranaan vain pieni nuhjuinen mustekalalelu. Kylmissään ja nälissään oleva Ursula pelastettiin tarhalle, jossa se vietti noin vuoden ennen Suomeen saapumistaan. Ursula on vilkas ja utelias pikkukoira, jolla on voimakas tahto. Tulevan kodin tuleekin panostaa Ursulan koulutukseen, vaikka kotikoiran elkeet, kuten sisäsiisteys, on muuten hallinnassa. Kotihoidon koiralaumassa Ursula on viihtynyt hyvin, mutta on taipuvainen pomottamaan kiltimpiä koirakavereita.</p>
+          </div>
+          <div class="col-sm-6">
+            <img id="myImg" src="images/ursula.jpg" alt="Ursula-koira">
+           
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img src="*" alt="*" class="modal-content" id="img01">
+</div>
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+            </div>
+        <div class="row">
+            <div class="col-sm-6 bg-white">
+              <h2>Ruska</h2>
+              <p>Kaksivuotias sekarotuinen Ruska joutui omistajansa hylkäämäksi Kreikassa, kun omistaja jätti Ruskan koiratarhan ovelle ilman viestejä. Ruska on hieman hitaasti lämpiävä, mutta tuttujen ihmisten seurassa todella hellyydenkipeä. Koira pitää myös selkeästi enemmän ihmisten kuin toisten koirien seurasta, sillä Ruska ei juuri hakeudu leikkiin tai muuhunkaan kontaktiin toisten koirien kanssa.</p>
+              <p>Aktiivinen ja miellyttämisenhaluinen Ruska sopisi hyvin johonkin koiraharrastukseen, kuten agilityyn tai koiratanssiin. Pidämmekin etusijalla harrastavia kodintarjoajia.</p>
+            </div>
+            <div class="col-sm-6">
+              <img id="myImg2" src="images/ruska.jpg" alt="Ruska-koira">
+<div id="myModal2" class="modal2">
+  <span class="close2">&times;</span>
+  <img src="*" alt="*" class="modal-content2" id="img02">
+</div>
+
+<script>
+var modal = document.getElementById("myModal2");
+
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img02");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close2")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 bg-white">
+              <h2>Sepeteus</h2>
+              <p>Seniorikoira Sepeteus on etsinyt omaa kotiaan jo pitkään: 9-vuotiaan collie-kultainennoutaja-mix Sepeteuksen kroatialainen omistaja kuoli, jolloin se päätyi yhteistyötarhallemme. Kahden vuoden tarhaelämän jälkeen Sepeteus pääsi vihdoin Suomeen kotihoitoon etsimään omaa kotia. Sepeteus on rauhallinen vanhaherra, jolla riittää yllättävän paljon energiaa pitkiin kävelylenkkeihin ja tutkimusretkiin. Sepeteus on kiltti, mutta stressaantuu helposti liiallisesta vilinästä, joten etsimme Sepeteukselle pääasiassa maaseutukotia perheestä, jossa ei ole pikkulapsia. </p>
+            </div>
+            <div class="col-sm-6">
+              <img src="images/sepeteus.jpg" alt="Sepeteus-koira">
+          </div>
+          </div>
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <footer class="footer mt-auto py-2 bg-light">
+            <div class="container">
+              <span class="text-muted">
+                Rescueyhdistys Turrelle tuki // Hännänheiluttajantie 45 B 2 00313 Koirala
+              </span>
+          </div>
+          </footer>
+    </body>
+</html>

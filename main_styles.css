@@ -15,10 +15,11 @@ nav {
 }
 p {
     margin: 30px;
-    font-size: 15px;
+    font-size: 14px;
 }
-li {
-    font-size: 15px;
+ul {
+    font-size: 14px;
+}
 h1 {
     font-style: italic;
     margin: 20px;
